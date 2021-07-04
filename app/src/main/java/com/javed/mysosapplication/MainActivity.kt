@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), SosAdapterInterface {
 
-    val rCode = 1001
+    private val rCode = 1001
     var userName: String? = null
     var contact: String? = null
     var address: String? = null

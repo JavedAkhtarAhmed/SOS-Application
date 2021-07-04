@@ -35,5 +35,6 @@ class ThirdActivity : AppCompatActivity(), SosAdapterInterface {
         }
         rv.adapter = sosAdapter
     }
+    
     override fun onItemClick(name: String) {}
 }
