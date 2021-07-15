@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(), SosAdapterInterface {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == rCode) {
-            if (resultCode === RESULT_OK) {
+            if (resultCode == RESULT_OK) {
                 userName = data?.getStringExtra("UserName").toString()
                 contact = data?.getStringExtra("Contact").toString()
                 address = data?.getStringExtra("Address").toString()

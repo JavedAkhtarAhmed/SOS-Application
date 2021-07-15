@@ -9,11 +9,9 @@ import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
 
-    private var sosAdapter: SosAdapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
-
 
 
         btnSubmit.setOnClickListener {
@@ -35,12 +33,12 @@ class SecondActivity : AppCompatActivity() {
         }
     }
 
-    fun hideKeyboard() {
+    private fun hideKeyboard() {
         val hide = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
         hide.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0)
     }
 
-    fun clearEditText() {
+    private fun clearEditText() {
         etName.setText("")
         etContact.setText("")
         etAddress.setText("")

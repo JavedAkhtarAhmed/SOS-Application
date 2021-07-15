@@ -17,7 +17,6 @@ class ThirdActivity : AppCompatActivity(), SosAdapterInterface {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-//        peopleList?.add(Sos("akon","436367","nw"))
 
         val intent = intent.extras
         val jsonString = intent?.getString("list").toString()
